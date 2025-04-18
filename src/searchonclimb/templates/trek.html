@@ -33,13 +33,13 @@
 
 			<div class="d-flex align-items-center">
 				<!-- Logo -->
-				<a class="navbar-brand" href="index.html">
+				<a class="navbar-brand" href="{% url 'index' %}">
 					<img src="{% static 'core/images/icons/soc_logo.jpg' %}" alt="Search On Climb" class="logo"
 						style="border: 1px solid rgba(255, 255, 255, 0.2);">
 				</a>
 				<!-- Company Name -->
-				<a class="navbar-brand" href="index.html">Searchon&nbsp;</a>
-				<a class="navbar-brand fix" href="index.html">
+				<a class="navbar-brand" href="{% url 'index' %}">Searchon&nbsp;</a>
+				<a class="navbar-brand fix" href="{% url 'index' %}">
 					<img src="{% static 'core/images/icons/Climb.png' %}" alt="Search On Climb" class="navbar-logo-wide">
 				</a>
 			</div>
@@ -50,11 +50,11 @@
 
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-					<li class="nav-item"><a href="trek.html" class="nav-link">Trek</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+					<li class="nav-item active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+					<li class="nav-item"><a href="{% url 'trek' %}" class="nav-link">Trek</a></li>
+					<li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -77,7 +77,7 @@
 			<div class="row">
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="kedarkantha.html" class="img"
+						<a href="{% url 'kedarkantha' %}" class="img"
 							style="background-image: url({% static 'core/images/Kedarkantha/kd1.jpeg' %});">
 							<span class="price">Rs 7999/person</span>
 						</a>
@@ -88,7 +88,7 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="kedarkantha.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'kedarkantha' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 
 						</div>
@@ -96,7 +96,7 @@
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="harki.html" class="img" style="background-image: url({% static 'core/images/Harki/hk2.webp' %});">
+						<a href="{% url 'harki' %}" class="img" style="background-image: url({% static 'core/images/Harki/hk2.webp' %});">
 							<span class="price">Rs 9499/person</span>
 						</a>
 						<div class="text p-4">
@@ -106,14 +106,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="harki.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'harki' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="phulara.html" class="img" style="background-image: url({% static 'core/images/Phulara/ph1.webp' %});">
+						<a href="{% url 'phulara' %}" class="img" style="background-image: url({% static 'core/images/Phulara/ph1.webp' %});">
 							<span class="price">Rs 8499/person</span>
 						</a>
 						<div class="text p-4">
@@ -123,7 +123,7 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="phulara.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'phulara' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
@@ -131,7 +131,7 @@
 
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="kauri.html" class="img" style="background-image: url({% static 'core/images/Kauri/kr1.webp' %});">
+						<a href="{% url 'kauri' %}" class="img" style="background-image: url({% static 'core/images/Kauri/kr1.webp' %});">
 							<span class="price">Rs 8499/person</span>
 						</a>
 						<div class="text p-4">
@@ -141,14 +141,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="kauri.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'kauri' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="flowers.html" class="img" style="background-image: url({% static 'core/images/Flower/fl2.webp' %});">
+						<a href="{% url 'flowers' %}" class="img" style="background-image: url({% static 'core/images/Flower/fl2.webp' %});">
 							<span class="price">8499/person</span>
 						</a>
 						<div class="text p-4">
@@ -158,14 +158,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="flowers.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'flowers' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="brahmatal.html" class="img" style="background-image: url({% static 'core/images/Brahmatal/br1.jpg' %});">
+						<a href="{% url 'brahmatal' %}" class="img" style="background-image: url({% static 'core/images/Brahmatal/br1.jpg' %});">
 							<span class="price">Rs 7999/person</span>
 						</a>
 						<div class="text p-4">
@@ -175,14 +175,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="brahmatal.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'brahmatal' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="chopta.html" class="img" style="background-image: url({% static 'core/images/chopta/cp2.avif' %});">
+						<a href="{% url 'chopta' %}" class="img" style="background-image: url({% static 'core/images/chopta/cp2.avif' %});">
 							<span class="price">Rs 7999/person</span>
 						</a>
 						<div class="text p-4">
@@ -192,14 +192,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="chopta.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'chopta' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="dayara.html" class="img" style="background-image: url({% static 'core/images/Dayara/dr1.webp' %});">
+						<a href="{% url 'dayara' %}" class="img" style="background-image: url({% static 'core/images/Dayara/dr1.webp' %});">
 							<span class="price">Rs 7999/person</span>
 						</a>
 						<div class="text p-4">
@@ -209,14 +209,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="dayara.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'dayara' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="rupin.html" class="img" style="background-image: url({% static 'core/images/rupin/rp8.jpg' %});">
+						<a href="{% url 'rupin' %}" class="img" style="background-image: url({% static 'core/images/rupin/rp8.jpg' %});">
 							<span class="price">Rs 16499/person</span>
 						</a>
 						<div class="text p-4">
@@ -226,14 +226,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="rupin.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'rupin' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="bali.html" class="img" style="background-image: url({% static 'core/images/Bali/bl4.jpg' %});">
+						<a href="{% url 'bali' %}" class="img" style="background-image: url({% static 'core/images/Bali/bl4.jpg' %});">
 							<span class="price">Rs 20999/person</span>
 						</a>
 						<div class="text p-4">
@@ -243,14 +243,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="bali.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'bali' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="sar.html" class="img" style="background-image: url({% static 'core/images/sar/sr1.avif' %});">
+						<a href="{% url 'sar' %}" class="img" style="background-image: url({% static 'core/images/sar/sr1.avif' %});">
 							<span class="price">Rs 10499/person</span>
 						</a>
 						<div class="text p-4">
@@ -260,14 +260,14 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="sar.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'sar' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 ftco-animate">
 					<div class="project-wrap">
-						<a href="hampta.html" class="img" style="background-image: url({% static 'core/images/Hampta/hm7.jpg' %});">
+						<a href="{% url 'hampta' %}" class="img" style="background-image: url({% static 'core/images/Hampta/hm7.jpg' %});">
 							<span class="price">Rs 11999/person</span>
 						</a>
 						<div class="text p-4">
@@ -277,7 +277,7 @@
 							<p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
 							<ul>
 
-								<p><a href="hampta.html" class="btn btn-secondary">Read more</a></p>
+								<p><a href="{% url 'hampta' %}" class="btn btn-secondary">Read more</a></p>
 							</ul>
 						</div>
 					</div>
@@ -323,10 +323,10 @@
 					<div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
 						<h2 class="ftco-heading-2">Infromation</h2>
 						<ul class="list-unstyled">
-							<li><a href="contact.html" class="py-2 d-block">Online Enquiry</a></li>
-							<li><a href="policy.html" class="py-2 d-block">Booking Conditions</a></li>
-							<li><a href="policy.html" class="py-2 d-block">Privacy and Policy</a></li>
-							<li><a href="policy.html" class="py-2 d-block">Refund Policy</a></li>
+							<li><a href="{% url 'contact' %}" class="py-2 d-block">Online Enquiry</a></li>
+							<li><a href="{% url 'policy' %}" class="py-2 d-block">Booking Conditions</a></li>
+							<li><a href="{% url 'policy' %}" class="py-2 d-block">Privacy and Policy</a></li>
+							<li><a href="{% url 'policy' %}" class="py-2 d-block">Refund Policy</a></li>
 							<li><a href="tel:+91-8279454604" class="py-2 d-block">Call Us</a></li>
 						</ul>
 					</div>

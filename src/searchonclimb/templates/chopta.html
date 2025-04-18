@@ -32,13 +32,13 @@
 
         <div class="d-flex align-items-center">
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{% url 'index' %}">
                 <img src="{% static 'core/images/icons/soc_logo.jpg' %}" alt="Search On Climb" class="logo"
                     style="border: 1px solid rgba(255, 255, 255, 0.2);">
             </a>
             <!-- Company Name -->
-            <a class="navbar-brand" href="index.html">Searchon&nbsp;</a>
-            <a class="navbar-brand fix" href="index.html">
+            <a class="navbar-brand" href="{% url 'index' %}">Searchon&nbsp;</a>
+            <a class="navbar-brand fix" href="{% url 'index' %}">
                 <img src="{% static 'core/images/icons/Climb.png' %}" alt="Search On Climb" class="navbar-logo-wide">
             </a>
         </div>
@@ -49,11 +49,11 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="trek.html" class="nav-link">Trek</a></li>
-                <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item active"><a href="{% url 'index' %}" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="{% url 'about' %}" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="{% url 'trek' %}" class="nav-link">Trek</a></li>
+                <li class="nav-item"><a href="{% url 'blog' %}" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="{% url 'contact' %}" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -478,10 +478,10 @@
                 <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
                     <h2 class="ftco-heading-2">Infromation</h2>
                     <ul class="list-unstyled">
-                        <li><a href="contact.html" class="py-2 d-block">Online Enquiry</a></li>
-                        <li><a href="policy.html" class="py-2 d-block">Booking Conditions</a></li>
-                        <li><a href="policy.html" class="py-2 d-block">Privacy and Policy</a></li>
-                        <li><a href="policy.html" class="py-2 d-block">Refund Policy</a></li>
+                        <li><a href="{% url 'contact' %}" class="py-2 d-block">Online Enquiry</a></li>
+                        <li><a href="{% url 'policy' %}" class="py-2 d-block">Booking Conditions</a></li>
+                        <li><a href="{% url 'policy' %}" class="py-2 d-block">Privacy and Policy</a></li>
+                        <li><a href="{% url 'policy' %}" class="py-2 d-block">Refund Policy</a></li>
                         <li><a href="tel:+91-8279454604" class="py-2 d-block">Call Us</a></li>
                     </ul>
                 </div>

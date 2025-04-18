@@ -1,48 +1,31 @@
 import os
 import re
 
-TEMPLATE_DIR = './searchonclimb/templates'
-STATIC_PREFIX = 'core/'
+TEMPLATE_DIR = "./searchonclimb/templates"
 
-# Match inline CSS background-image URLs (within style="background-image: url(...)")
-inline_css_pattern = re.compile(
-    r'(<[^>]*?style=["\'][^"\']*?background-image:\s*url\(["\']?)([^"\')]+)(["\']?\)[^>]*?>)',
-    re.IGNORECASE
-)
-
-def wrap_static_inline_css(match):
-    before = match.group(1)
-    path = match.group(2)
-    after = match.group(3)
-
-    # Only update local paths (not URLs starting with http://, https://, etc.)
-    if not path.startswith(('http', 'https', 'mailto', 'tel')):
-        # Wrap path in the {% static %} tag
-        django_path = f"{{% static '{STATIC_PREFIX}{path}' %}}"
-        return f"{before}{django_path}{after}"
-    return match.group(0)
+def fix_extra_quotes(content):
+    # Pattern: href="{% url 'name' %}""  → should be href="{% url 'name' %}"
+    return re.sub(r'({% url\s+\'[^\']+\'\s*%})["]', r'\1', content)
 
 def process_file(filepath):
-    with open(filepath, 'r', encoding='utf-8') as file:
-        content = file.read()
+    with open(filepath, "r", encoding="utf-8") as f:
+        content = f.read()
 
-    # Update inline CSS background-image urls
-    updated_content = re.sub(inline_css_pattern, wrap_static_inline_css, content)
-
+    updated_content = fix_extra_quotes(content)
     if updated_content != content:
-        with open(filepath, 'w', encoding='utf-8') as file:
-            file.write(updated_content)
-        print(f"✅ Updated: {filepath}")
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(updated_content)
+        print(f"✅ Fixed quotes: {filepath}")
     else:
-        print(f"⏭️ No change: {filepath}")
+        print(f"⏭️ No extra quotes found: {filepath}")
 
 def process_all():
-    for root, _, files in os.walk(TEMPLATE_DIR):
+    print("🔍 Scanning for extra quotes after {% url %}...")
+    for root, dirs, files in os.walk(TEMPLATE_DIR):
         for file in files:
-            if file.endswith('.html'):
+            if file.endswith(".html"):
                 process_file(os.path.join(root, file))
+    print("✅ Done fixing invalid quotes.")
 
-if __name__ == '__main__':
-    print("🔧 Running static asset updater for inline CSS background images...")
+if __name__ == "__main__":
     process_all()
-    print("✅ All done.")
