@@ -1,11 +1,1137 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Search On Climb</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/icons/soc_logo_head.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    Hello
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+
+            <div class="d-flex align-items-center">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/icons/soc_logo.jpg" alt="Search On Climb" class="logo"
+                        style="border: 1px solid rgba(255, 255, 255, 0.2);">
+                </a>
+                <!-- Company Name -->
+                <a class="navbar-brand" href="index.html">Searchon&nbsp;</a>
+                <a class="navbar-brand fix" href="index.html">
+                    <img src="images/icons/Climb.png" alt="Search On Climb" class="navbar-logo-wide">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span><i class="fa fa-bars fa-2x"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="trek.html" class="nav-link">Trek</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END nav -->
+
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/background/bench.jpg');">
+        <!-- <div class="overlay"></div> -->
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+                <div class="col-md-7 ftco-animate">
+
+                    <h1 class="mb-4">Discover Your Favorite Trek with Us</h1>
+                    <!-- <p class="caps" style="color: beige;">Join us on an unforgettable trekking adventure, where breathtaking landscapes,
+						thrilling trails, and the spirit of exploration await you. Whether you're a seasoned trekker or
+						a beginner seeking a new challenge, we have the perfect trail for you.</p> -->
+                    <a href="https://wa.link/rgugk4" class="btn mb-5" style="background-color: yellow;">Book Now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ftco-search d-flex justify-content-center">
+                        <div class="row">
+                            <div class="col-md-12 nav-link-wrap">
+                                <div class="nav nav-pills text-center" id="v-pills-tab" role="tablist"
+                                    aria-orientation="vertical">
+                                    <a class="nav-link active mr-md-1" id="v-pills-1-tab" data-toggle="pill"
+                                        href="#v-pills-1" role="tab" aria-controls="v-pills-1"
+                                        aria-selected="true">Search Trek</a>
+
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-12 tab-wrap">
+
+                                <div class="tab-content" id="v-pills-tabContent">
+
+                                    <div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+                                        aria-labelledby="v-pills-nextgen-tab">
+                                        <form class="search-property-1">
+                                            <div class="row no-gutters">
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4 border-0">
+                                                        <label for="#">Treks</label>
+                                                        <div class="form-field">
+                                                            <div class="icon" style="pointer-events: none;"><span
+                                                                    class="fa fa-search"></span></div>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Trek Name" id="trek">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="#">Start Date</label>
+                                                        <div class="form-field">
+                                                            <div class="icon" style="pointer-events: none;"><span
+                                                                    class="fa fa-calendar"></span></div>
+                                                            <input type="text" class="form-control checkin_date"
+                                                                placeholder="Start Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="#">End Date</label>
+                                                        <div class="form-field">
+                                                            <div class="icon" style="pointer-events: none;"><span
+                                                                    class="fa fa-calendar"></span></div>
+                                                            <input type="text" class="form-control checkout_date"
+                                                                placeholder="End Date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group p-4">
+                                                        <label for="#">Person</label>
+                                                        <div class="form-field">
+                                                            <div class="select-wrap">
+                                                                <div class="icon" style="pointer-events: none;"><span
+                                                                        class="fa fa-chevron-down"></span></div>
+                                                                <select name="" id="" class="form-control">
+                                                                    <option value="">1</option>
+                                                                    <option value="">2</option>
+                                                                    <option value="">3</option>
+                                                                    <option value="">4</option>
+                                                                    <option value="">5</option>
+                                                                    <option value="">6</option>
+                                                                    <option value="">7</option>
+                                                                    <option value="">More than 8</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md d-flex">
+                                                    <div class="form-group d-flex w-100 border-0">
+                                                        <div class="form-field w-100 align-items-center d-flex">
+                                                            <input type="submit" value="Ask for a Quote"
+                                                                class="align-self-stretch form-control btn btn-primary">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="ftco-section img ftco-select-destination"
+        style="background-image: url(images/background/faded_white_texture.jpg);">
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+
+                    <h2 class="mb-4">Treks We Offer</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container container-2">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="carousel-destination owl-carousel ftco-animate">
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Kedarkantha/kd2.jpeg);">
+                                    <div class="text">
+                                        <h3>Kedarkantha</h3>
+                                        <!-- <span>8 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Harki/hk3.jpg);">
+                                    <div class="text">
+                                        <h3>Har Ki Dun</h3>
+                                        <!-- <span>2 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Phulara/ph3.webp);">
+                                    <div class="text">
+                                        <h3>Phulara Ridge</h3>
+                                        <!-- <span>5 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Kauri/kr3.webp);">
+                                    <div class="text">
+                                        <h3>Kauri Pass</h3>
+                                        <!-- <span>5 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Flower/fl1.webp);">
+                                    <div class="text">
+                                        <h3>Valley of Flowers</h3>
+                                        <!-- <span>7 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Brahmatal/br2.webp);">
+                                    <div class="text">
+                                        <h3>Brahmatal</h3>
+                                        <!-- <span>7 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/Dayara/dr1.webp);">
+                                    <div class="text">
+                                        <h3>Dayara Bugyal</h3>
+                                        <!-- <span>7 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="project-destination">
+                                <a class="img" style="background-image: url(images/chopta/cp1.webp);">
+                                    <div class="text">
+                                        <h3>Chopta Tungnath</h3>
+                                        <!-- <span>7 Tours</span> -->
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section">
+        <div style="background-image: url('images/background/trekback.jpg'); background-size: cover; background-position: center;"
+            class="container">
+
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <!-- <span class="subheading">Destination</span> -->
+                    <h2 class="mb-4">Trek Details</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="kedarkantha.html" class="img"
+                            style="background-image: url(images/Kedarkantha/kd1.jpeg);">
+                            <span class="price">Rs 7999/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">4 Days Trek</span>
+                            <h3><a>Kedarkantha Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="kedarkantha.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="harki.html" class="img" style="background-image: url(images/Harki/hk2.webp);">
+                            <span class="price">Rs 9499/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">4 Days Trek</span>
+                            <h3><a>Har Ki Dun Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="harki.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="phulara.html" class="img" style="background-image: url(images/Phulara/ph1.webp);">
+                            <span class="price">Rs 8499/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">4 Days Trek</span>
+                            <h3><a>Phulara Ridge Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="phulara.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="kauri.html" class="img" style="background-image: url(images/Kauri/kr1.webp);">
+                            <span class="price">Rs 8499/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">8 Days Tour</span>
+                            <h3><a>Kauri Pass Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="kauri.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="flowers.html" class="img" style="background-image: url(images/Flower/fl2.webp);">
+                            <span class="price">8499/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">4 Days Trek</span>
+                            <h3><a>Valley of Flowers</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="flowers.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="brahmatal.html" class="img" style="background-image: url(images/Brahmatal/br1.jpg);">
+                            <span class="price">Rs 7999/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 Days Trek</span>
+                            <h3><a>Brahmatal Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="brahmatal.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="chopta.html" class="img" style="background-image: url(images/chopta/cp2.avif);">
+                            <span class="price">Rs 7999/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">4 Days Trek</span>
+                            <h3><a>Chopta Tungnath Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="chopta.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="dayara.html" class="img" style="background-image: url(images/Dayara/dr1.webp);">
+                            <span class="price">Rs 7999/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 Days Trek</span>
+                            <h3><a>Dayara Bugyal Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="dayara.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="rupin.html" class="img" style="background-image: url(images/rupin/rp8.jpg);">
+                            <span class="price">Rs 16499/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 Days Trek</span>
+                            <h3><a>Rupin Pass Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="rupin.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="bali.html" class="img" style="background-image: url(images/Bali/bl4.jpg);">
+                            <span class="price">Rs 20999/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 Days Trek</span>
+                            <h3><a>Bali Pass Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="bali.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="sar.html" class="img" style="background-image: url(images/sar/sr1.avif);">
+                            <span class="price">Rs 10499/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 Days Trek</span>
+                            <h3><a>Sar Pass Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="sar.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ftco-animate">
+                    <div class="project-wrap">
+                        <a href="hampta.html" class="img" style="background-image: url(images/Hampta/hm7.jpg);">
+                            <span class="price">Rs 11999/person</span>
+                        </a>
+                        <div class="text p-4">
+                            <span class="days">7 Days Trek</span>
+                            <h3><a>Hampta Pass Trek</a></h3>
+
+                            <p style="color: black;"><span class="flaticon-mountains"></span> Easy to Moderate</p>
+                            <ul>
+
+                                <p><a href="hampta.html" class="btn btn-secondary">Read more</a></p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ftco-section services-section">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-6 order-md-last heading-section pl-md-5 ftco-animate d-flex align-items-center">
+                    <div class="w-100">
+                        <!-- <span class="subheading">Welcome to Search </span> -->
+                        <h2 style="color: red" class="mb-4">Welcome to Search On Climb</h2>
+                        <p>At Search on Climb, trekking is more than just an adventure—it’s a journey that transforms
+                            the mind, body, and soul. We believe the mountains have the power to inspire, heal, and
+                            bring a deeper sense of connection with nature. Our treks are designed not just to explore
+                            breathtaking landscapes but to create meaningful experiences that stay with you long after
+                            the journey ends.
+
+                            From the moment you set foot on the trail, you become part of the Search on Climb family. We
+                            focus on building a supportive and enriching environment where trekkers can challenge
+                            themselves, gain confidence, and find a fresh perspective on life. Our experienced outdoor
+                            leaders guide you through carefully curated trails, incorporating mindfulness and reflection
+                            exercises that add depth to your adventure.
+
+                            The Himalayas, with their towering peaks, pristine waterfalls, and hidden trails, remind us
+                            of the beauty of the outdoors and the thrill of exploration. Whether you join as a solo
+                            traveler or with a group, our treks bring people together, turning strangers into lifelong
+                            friends.
+
+                            At Search on Climb, we don’t just take you to the mountains—we help you discover something
+                            new within yourself. Every step is a story, every summit an achievement, and every journey a
+                            chance to grow.</p>
+
+                        <p><a href="https://wa.link/rgugk4" class="btn btn-secondary py-3 px-4">Book Now</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-1 d-block img"
+                                style="background-image: url(images/background/bonefire.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-paragliding"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Activities</h3>
+                                    <p>Enjoy trekking, camping, bonfires, sightseeing, and adventure sports with our
+                                        exciting activities, perfect for thrill-seekers</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-2 d-block img"
+                                style="background-image: url(images/services-2.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-route"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Travel Arrangements</h3>
+                                    <p>We provide hassle-free travel arrangements, including transportation,
+                                        accommodation, and guided tours</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-3 d-block img"
+                                style="background-image: url(images/services-3.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-tour-guide"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Guide</h3>
+                                    <p>Our experienced tour guides ensure a safe, fun, and informative journey through
+                                        the trails.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate">
+                            <div class="services services-1 color-4 d-block img"
+                                style="background-image: url(images/services-4.jpg);">
+                                <div class="icon d-flex align-items-center justify-content-center"><span
+                                        class="flaticon-map"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Thrilling Treks</h3>
+                                    <p>We offer a variety of treks for all skill levels, from easy nature walks to
+                                        challenging mountain trails.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="ftco-section testimony-section bg-bottom"
+        style="background-image: url(images/background/img6.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center pb-4">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+
+                    <h2 class="mb-4">Trekkers Feedback</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel">
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Trek was amazing, The guide were very friendly and helpful.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                            style="background-image: url(images/Review/Rohit\ Singh.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Lovepreet Singh</p>
+                                            <span class="position">New Delhi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Well organised Trek, The stay was also nice and clean. 10/10</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Rahul.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Siddarth Yadav</p>
+                                            <span class="position">Noida</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Very supportive Guides, Helped me throughout my trek.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Dhruv\ .jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Ayush Singh</p>
+                                            <span class="position">Indore</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">It was my first trek and it was amazing, guides were very helpful
+                                    </p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                            style="background-image: url(images/Review/Nikita\ Shah.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Khushi Pawha</p>
+                                            <span class="position">Jaipur</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">My first visit to India, and loved the trek. Will come again</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img"
+                                            style="background-image: url(images/Review/Zhu\ Luang.jpg)"></div>
+                                        <div class="pl-3">
+                                            <p class="name">Ethan Yamato</p>
+                                            <span class="position">Cape Town</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Amazing experience! The trek was well-planned, and the guides were
+                                        very knowledgeable. Highly recommended!</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Priya.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Priya Sharma</p>
+                                            <span class="position">Mumbai</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">The best trekking experience I've ever had! The team was
+                                        professional, and the views were breathtaking.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Rajesh.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Rajesh Kumar</p>
+                                            <span class="position">Delhi</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Everything was perfect! The accommodations were comfortable, and the
+                                        food was delicious. Will definitely come back!</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Ananya.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Ananya Patel</p>
+                                            <span class="position">Ahmedabad</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">The trek was challenging but worth it! The guides were supportive,
+                                        and the scenery was stunning.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Vikram.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Vikram Singh</p>
+                                            <span class="position">Jaipur</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">A memorable experience! The team took care of everything, and the
+                                        trek was well-organized.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Meera.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Meera Desai</p>
+                                            <span class="position">Bangalore</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">The trek was amazing! The guides were friendly, and the entire
+                                        experience was hassle-free.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Arjun.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Arjun Reddy</p>
+                                            <span class="position">Hyderabad</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Loved every moment of the trek! The team was professional, and the
+                                        arrangements were top-notch.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Neha.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Neha Gupta</p>
+                                            <span class="position">Pune</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">An unforgettable adventure! The trek was well-organized, and the
+                                        views were breathtaking.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Rohan.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Rohan Mehta</p>
+                                            <span class="position">Chennai</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">The trek was fantastic! The team was very supportive, and the entire
+                                        experience was smooth.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Sneha.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Sneha Joshi</p>
+                                            <span class="position">Kolkata</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap py-4">
+                                <div class="text">
+                                    <p class="star">
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </p>
+                                    <p class="mb-4">Absolutely loved the trek! The guides were amazing, and the scenery
+                                        was out of this world.</p>
+                                    <div class="d-flex align-items-center">
+                                        <div class="user-img" style="background-image: url(images/Review/Aryan.jpg)">
+                                        </div>
+                                        <div class="pl-3">
+                                            <p class="name">Aryan Kapoor</p>
+                                            <span class="position">Lucknow</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-about ftco-no-pt img">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-md-12 about-intro">
+                    <div class="row">
+
+                        <div class="col-md-6 pl-md-5 py-5">
+                            <div class="row justify-content-start pb-3">
+                                <div class="col-md-12 heading-section ftco-animate">
+
+                                    <h2 class="mb-4">Make Your Trek Memorable and Safe With Us</h2>
+                                    <p>Embark on an unforgettable trek with us! We ensure safety, expert guidance, and
+                                        breathtaking experiences. Let us handle the details while you enjoy nature’s
+                                        beauty stress-free. Adventure awaits—safely and memorably.</p>
+                                    <p><a href="https://wa.link/rgugk4" class="btn btn-primary">Book Your Trek Now</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer bg-bottom ftco-no-pt" style="background-color: black;">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md pt-5">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Thanks For Visiting</h2>
+
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                            <li class="ftco-animate"><a href="https://wa.link/rgugk4"><span
+                                        class="fa fa-whatsapp"></span></a></li>
+                            <li class="ftco-animate"><a href="tel:+91-8279454604"><span class="fa fa-phone"></span></a>
+                            </li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/searchonclimb/"><span
+                                        class="fa fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md pt-5 border-left">
+                    <div class="ftco-footer-widget pt-md-5 mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Infromation</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="contact.html" class="py-2 d-block">Online Enquiry</a></li>
+                            <li><a href="policy.html" class="py-2 d-block">Booking Conditions</a></li>
+                            <li><a href="policy.html" class="py-2 d-block">Privacy and Policy</a></li>
+                            <li><a href="policy.html" class="py-2 d-block">Refund Policy</a></li>
+                            <li><a href="tel:+91-8279454604" class="py-2 d-block">Call Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md pt-5 border-left">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Experience</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Adventure</a></li>
+                            <li><a href="#" class="py-2 d-block">Hotel</a></li>
+                            <li><a href="#" class="py-2 d-block">Mountains</a></li>
+                            <li><a href="#" class="py-2 d-block">Nature</a></li>
+                            <li><a href="#" class="py-2 d-block">Camping</a></li>
+                            <li><a href="#" class="py-2 d-block">Party</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md pt-5 border-left">
+                    <div class="ftco-footer-widget pt-md-5 mb-4">
+                        <h2 class="ftco-heading-2">Have a Questions?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon fa fa-map-marker"></span><span
+                                        class="custom-text">Uttrakhand</span></li>
+                                <li><a href="tel:+91-8279454604"><span class="icon fa fa-phone"></span><span
+                                            class="custom-text">+91-8279454604</span></a></li>
+                                <li><a href="https://wa.link/rgugk4"><span class="icon fa fa-paper-plane"></span><span
+                                            class="custom-text">+91-8279454604</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+                        is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                            target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed-contact-logo">
+        <a href="https://www.instagram.com/searchonclimb/" target="_blank" class="logo insta-icon"
+            title="Chat on Instagram">
+            <img src="images/icons/insta.png" alt="Instagram Logo" />
+        </a>
+        <a href="https://wa.link/rgugk4" target="_blank" class="logo whats-icon" title="Chat on WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo" />
+        </a>
+        <a href="tel:+91-8279454604" class="logo tele-icon" title="Call Now">
+            <img src="images/icons/telephone.png" alt="Call Logo" />
+        </a>
+    </div>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelector('input[type="submit"]').addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent form submission
+
+                let trek = document.querySelector('input[placeholder="Trek Name"]').value.trim();
+                let startDate = document.querySelector('input[placeholder="Start Date"]').value.trim();
+                let endDate = document.querySelector('input[placeholder="End Date"]').value.trim();
+                let priceDropdown = document.querySelector('select.form-control');
+                let price = priceDropdown ? priceDropdown.options[priceDropdown.selectedIndex].text.trim() : "";
+
+                // Validate input
+                if (!trek || !startDate || !endDate || !price) {
+                    alert("Please fill out all fields before booking.");
+                    return;
+                }
+
+                let message = `Trek Name: ${trek}\nStart Date: ${startDate}\nEnd Date: ${endDate}\nPrice Limit: ${price}`;
+                let phone = "+918279454604"; // Replace with your WhatsApp number (include country code)
+
+                let url = `https://api.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+                window.open(url, "_blank");
+            });
+        });
+    </script>
+
+
 </body>
+
 </html>
